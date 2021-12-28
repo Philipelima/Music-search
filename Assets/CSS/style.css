@@ -17,10 +17,12 @@ body {
 
 
 .musicSearch-logo {
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #601bce;
     font-weight: lighter;
     padding-bottom: 10px;
+    
 }
 
 .music {
