@@ -1,0 +1,17 @@
+.alert-User {
+
+    padding: 20px 30px;
+   
+    color: #ffffff;
+    position: fixed;
+    bottom: 40px;
+    border-radius: 5px;
+
+}
+
+.error {
+
+    background-color: #e24747;
+    border: 1px solid #a32828;
+
+}
