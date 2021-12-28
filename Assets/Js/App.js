@@ -1,6 +1,6 @@
 const body = document.querySelector('body');
 const form = document.querySelector('.form');
-const inputSearch = document.querySelector('.input');
+const inputSearch = document.querySelector('.inputArea-input-search');
 
 
 inputSearch.addEventListener('keypress',  e => {
