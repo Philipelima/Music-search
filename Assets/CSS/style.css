@@ -2,6 +2,23 @@
     outline: none;
 }
 
+
+::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+    }
+     
+    
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+     
+ 
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 30px;
+}
+    
 body {
 
     display: flex;
@@ -11,18 +28,20 @@ body {
     justify-content: center;
     height: 100vh;
     background-attachment: fixed;
+    background-image: url('../Imgs/svg/musical.png');
+    background-size: 30px;
     
 }
 
 
 
-.musicSearch-logo {
-    
+.musicSearch {
+
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #601bce;
     font-weight: lighter;
     padding-bottom: 10px;
-    
+
 }
 
 .music {
@@ -31,7 +50,7 @@ body {
     color: #ffffff;
 
 }
-.inputArea-input-search {
+.input {
 
     height: 50px;
     width: 50vw;
