@@ -82,9 +82,8 @@ body {
 }
 
 .songs > .song {
-
     border-radius: 2px;
-    text-align: center;
+    text-align: left;
     padding: 4px 3px;
     box-sizing: border-box;
     cursor: default;
@@ -104,7 +103,7 @@ body {
 
 }
 
-.song-album-name{
+.song-artist-name{
 
     width: 150px;
     margin-top: -10px;
@@ -113,16 +112,19 @@ body {
 }
 .song-cover{
     border-radius: 4px;
+    height: 120px;
+    width: 130px;
+    background-color: #525252;
+    background-image: url(../Imgs/musical.png);
+    background-size: 40px;
 }
 
 .song-btn-area {
-
     display: none;
     position: absolute;
     border-radius: 3px;
-    margin-left: 15px;
     background-color: rgba(0, 0, 0, 0.8);
-    width: 120px;
+    width: 130px;
     height: 120px;
 }
 

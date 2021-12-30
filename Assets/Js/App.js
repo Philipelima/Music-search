@@ -62,10 +62,10 @@ function getSongs(songs) {
                 <button class = 'song-play' data-artist = '${song.artist.name}' data-song-name = '${song.title}' data-song='${song.preview}' data-album-img = ${song.album.cover}>Play Preview</button>
             </div>
             <picture>
-                <img class = 'song-cover' src='${song.album.cover}' alt= 'cover ${song.title}'>
+                <div class = 'song-cover'></div>
             </picture>
             <p class = "song-name">${song.title}</p>
-            <p class = "song-album-name">${song.album.title}</p>
+            <p class = "song-artist-name">${song.artist.name}</p>
         </article>
 
     `).join('');
@@ -116,7 +116,7 @@ function player(songName, songArtist, songCover) {
                 <p class = 'playing-artist'>${songArtist}</p>
             </div>
             <picture>
-                <img class = 'song-cover' src = '${songCover}' alt='${songName}'>
+                <div class = 'song-cover'></div>
             </picture>
         </section>
 
@@ -158,7 +158,7 @@ function renderLyrics(songName, artistSong, lyricsSong) {
 
 
     if(!lyricsSong){
-        errorUser("Lyrics not found. :(");
+        errorUser("Lyrics not found :(");
         return;
     }
 
