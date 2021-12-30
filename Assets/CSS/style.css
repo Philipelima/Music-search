@@ -191,3 +191,18 @@ body {
 .song-title{
     color: #601bce;
 }
+
+
+.author{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+
+.author a{
+    color: #601bce;
+    text-decoration: none;
+}

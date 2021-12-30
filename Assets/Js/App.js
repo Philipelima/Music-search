@@ -29,10 +29,6 @@ inputSearch.addEventListener('keypress', async e => {
 });
 
 
-
-
-
-
 async function searchMusic(search) {
 
     const formatedURL = `${fetchUrl}/suggest/${search}`
@@ -46,7 +42,7 @@ async function searchMusic(search) {
 }
 
 
-function trateResponse(response){
+function trateResponse(response) {
     
     let songs = response.data;
     let nextSuggestions = response.next;
@@ -56,7 +52,8 @@ function trateResponse(response){
     return finalResponse;
 }
 
-function getSongs(songs){
+
+function getSongs(songs) {
     
     resultArea.innerHTML = songs.map(song => `
 
@@ -76,7 +73,8 @@ function getSongs(songs){
     listenToPlayPreview();
 }
 
-function listenToPlayPreview(){
+
+function listenToPlayPreview() {
 
     let playButtons = document.querySelectorAll('.song-play');
 
@@ -96,7 +94,8 @@ function listenToPlayPreview(){
     });
 }
 
-function playPreview(songName, songURL, songArtist, songCover){
+
+function playPreview(songName, songURL, songArtist, songCover) {
     
     player(songName, songArtist, songCover)
     let song = new Audio(songURL);
@@ -124,7 +123,6 @@ function player(songName, songArtist, songCover) {
     `);
 
 
-
     const listenGetLyrics = async () => {
 
         let btnLyrics = document.querySelector('.lyrics-button');
@@ -145,7 +143,7 @@ function player(songName, songArtist, songCover) {
 }
 
 
-async function searchLyrics(song, artist){
+async function searchLyrics(song, artist) {
 
     const formatedURL = `${fetchUrl}/v1/${artist}/${song}`
 
@@ -160,7 +158,7 @@ function renderLyrics(songName, artistSong, lyricsSong) {
 
 
     if(!lyricsSong){
-        errorUser("Lyric not found. :(");
+        errorUser("Lyrics not found. :(");
         return;
     }
 
