@@ -28,14 +28,14 @@ body {
     justify-content: center;
     height: 100vh;
     background-attachment: fixed;
-    background-image: url('../Imgs/svg/musical.png');
+    background-image: url('../Imgs/musical.png');
     background-size: 30px;
     
 }
 
 
 
-.musicSearch {
+.musicSearch-logo {
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #601bce;
@@ -50,7 +50,8 @@ body {
     color: #ffffff;
 
 }
-.input {
+
+.inputArea-input-search {
 
     height: 50px;
     width: 50vw;
@@ -66,3 +67,127 @@ body {
 
 }
 
+.songs {
+
+    width: 50vw;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin:10vh auto; 
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    max-width: 800px;
+
+}
+
+.songs > .song {
+
+    border-radius: 2px;
+    text-align: center;
+    padding: 4px 3px;
+    box-sizing: border-box;
+    cursor: default;
+    
+}
+
+.song:hover .song-btn-area{
+
+    display: block;
+
+}
+.song-name{
+
+    margin-top: 5px;
+    width: 150px;
+    color: #ffffff;
+
+}
+
+.song-album-name{
+
+    width: 150px;
+    margin-top: -10px;
+    color: #525252;
+
+}
+.song-cover{
+    border-radius: 4px;
+}
+
+.song-btn-area {
+
+    display: none;
+    position: absolute;
+    border-radius: 3px;
+    margin-left: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 120px;
+    height: 120px;
+}
+
+.song-play{
+    color: #601bce;
+    margin: 40px 10px;
+    background-color: transparent;
+    border: 1px solid #601bce;
+    border-radius: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.player{
+
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+    background-color: #000;
+    padding: 10px 30px;
+    padding-right: 10px;
+    color: #ffffff;
+    border-radius: 4px;
+    border-bottom-left-radius: 50px;
+    min-width: 300px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10);
+
+}
+
+.player  .playing-now {
+    text-transform: uppercase;
+}
+
+.player  .playing-artist {
+    margin-top: -10px;
+}
+
+.lyrics-button{
+    width: 150px;
+    right: 10px;
+    height: 30px;
+    position: absolute;
+    margin-top: -50px;
+    border: 1px solid #601bce;
+    color:#601bce;
+    background-color: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.lyrics-button:hover{
+    background-color: #601bce;
+    color: #ffffff;
+}
+
+.song-lyrics {
+    text-align: center;
+    margin-left: 20px;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+.song-title{
+    color: #601bce;
+}
