@@ -19,7 +19,6 @@ inputSearch.addEventListener('keypress', async e => {
 
         let searchResult = await searchMusic(searchValue); 
         getSongs(searchResult.songs)
-        
         return;
 
        } 
